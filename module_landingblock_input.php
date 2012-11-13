@@ -3,7 +3,7 @@
 Module-Version: 0.1
 Author:         Tim Filler (elricco)
 Specials:       For landing Blocks on startpage or landingpages
-                defined on grid system (usual width: 280px)
+                defined on 960gs Gridsystem (usual width: 280px)
                 For UTF-8
           
 Values:         REX_VALUE[1]  - Headline
@@ -11,12 +11,12 @@ Values:         REX_VALUE[1]  - Headline
                 REX_MEDIA[1]  - Picture
                 REX_LINK[1]   - Link (internally)
                 REX_VALUE[3]  - Link (externally)
-                REX_VALUE[4]  - Linktext
-                REX_VALUE[5]  - Buttonclass
+                REX_VALUE[4]  - Buttonclass
+                REX_VALUE[5]  - Linktext
                 REX_LINK[1]   - Link (internally)
                 REX_VALUE[6]  - Link (externally)
-                REX_VALUE[7]  - Linktext
-                REX_VALUE[8]  - Buttonclass
+                REX_VALUE[7]  - Buttonclass
+                REX_VALUE[8]  - Linktext
 */
 ?>
 <strong>&Uuml;berschrift:</strong>
