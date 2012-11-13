@@ -1,6 +1,7 @@
+<?php
 /*
 Module-Version: 0.1
-Author:         Tim Filler
+Author:         Tim Filler (elricco)
 Specials:       For landing Blocks on startpage or landingpages
                 defined on grid system (usual width: 280px)
                 For UTF-8
@@ -17,7 +18,7 @@ Values:         REX_VALUE[1]  - Headline
                 REX_VALUE[7]  - Linktext
                 REX_VALUE[8]  - Buttonclass
 */
-
+?>
 <strong>&Uuml;berschrift:</strong>
 <br />
 <input type="text" size="80" name="VALUE[1]" value="REX_VALUE[1]" />
@@ -26,17 +27,19 @@ Values:         REX_VALUE[1]  - Headline
 <br />
 <textarea name="VALUE[2]" class="tinyMCEEditor-table" style="width:725px;height:350px;">REX_VALUE[2]</textarea>
 <br /><br />
-<strong>Bild: (wird auf Endgr&ouml;&szlige beschnitten)</strong> REX_MEDIA_BUTTON[1]
-<br /><br />
+<strong>Bild: (wird auf Endgr&ouml;&szlige beschnitten)</strong>
+<br />
+REX_MEDIA_BUTTON[1]
+<br />
 <hr />
-<table>
+<table width="100%">
   <tr>
     <td><strong>Link I:</strong></td>
-    <td>Intern wird extern IMMER vorgezogen</td>
+    <td>Intern wird Extern <strong>IMMER</strong> vorgezogen</td>
   </tr>
   <tr>
-    <td>Intern: REX_LINK_BUTTON[1]</td>
-    <td>Extern: <input type="text" size="40" name="VALUE[3]" value="REX_VALUE[3]" /></td>
+    <td>Intern:<br />REX_LINK_BUTTON[1]</td>
+    <td>Extern:<br /><input type="text" size="50" name="VALUE[3]" value="REX_VALUE[3]" /></td>
   </tr>
   <tr>
     <td>Buttonklasse: 
@@ -53,18 +56,18 @@ Values:         REX_VALUE[1]  - Headline
         }
         echo '</select>';
       ?>
-    <td>Linktext: <input type="text" size="40" name="VALUE[5]" value="REX_VALUE[5]" /></td>
+    <td>Linktext:<br /><input type="text" size="50" name="VALUE[5]" value="REX_VALUE[5]" /></td>
   </tr>
   <tr>
     <td colspan="2"><hr /></td>
   </tr>
   <tr>
     <td><strong>Link II:</strong></td>
-    <td>Intern wird extern IMMER vorgezogen</td>
+    <td>Intern wird extern <strong>IMMER</strong> vorgezogen</td>
   </tr>
   <tr>
-    <td>Intern: REX_LINK_BUTTON[2]</td>
-    <td>Extern: <input type="text" size="40" name="VALUE[6]" value="REX_VALUE[6]" /></td>
+    <td>Intern:<br />REX_LINK_BUTTON[2]</td>
+    <td>Extern:<br /><input type="text" size="50" name="VALUE[6]" value="REX_VALUE[6]" /></td>
   </tr>
   <tr>
     <td>Buttonklasse: 
@@ -81,6 +84,6 @@ Values:         REX_VALUE[1]  - Headline
         }
         echo '</select>';
       ?>
-    <td>Linktext: <input type="text" size="40" name="VALUE[8]" value="REX_VALUE[8]" /></td>
+    <td>Linktext:<br /><input type="text" size="50" name="VALUE[8]" value="REX_VALUE[8]" /></td>
   </tr>
 </table>
