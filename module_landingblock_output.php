@@ -54,7 +54,7 @@ Values:         REX_VALUE[1]  - Headline
       //Internal Linkgeneration
       if($intlink != '')
       {
-        $linkart  = OOArticle::getArticleById($linkid);
+        $linkart  = OOArticle::getArticleById($intlink);
         $linkname = $linkart->getName();
         if($linktext != '')
         {
@@ -85,29 +85,34 @@ Values:         REX_VALUE[1]  - Headline
   if("REX_VALUE[1]" != '')
   {
     $output  = '<div class="landingblock grid_6">'."\n";
-    $output .= '  <div class="blockhead">'."\n";
+    $output .= '  <div class="landing-head">'."\n";
     $output .= '    <h2>REX_VALUE[1]</h2>'."\n";
     $output .= '  </div>'."\n";
     if("REX_MEDIA[1]" != '')
     {
-      $mediafile = OOMedia::getMediaByFileName("REX_VALUE[1]");
+      $mediafile = OOMedia::getMediaByFileName("REX_MEDIA[1]");
       //Just in case we need more infos
       $mediapath = $mediafile->getFullPath();
       $mediawidth = $mediafile->getWidth();
       $mediaheight = $mediafile->getHeight();
       $medianame = $mediafile->getTitle();
       
-      $output .= '  <div class="landingpic">'."\n";
+      $output .= '  <div class="landing-pic">'."\n";
       $output .= '    <img src="index.php?rex_img_type=landing_pic&amp;rex_img_file=REX_MEDIA[1]" alt="'.$medianame.'" width="'.$imgw.'" height="'.$imgh.'" />'."\n";
       $output .= '  </div>'."\n";
     }
     
-    
+    if(REX_IS_VALUE[2])
+    {
+      $output .= '  <div class="landing-text">'."\n";
+      $output .= 'REX_HTML_VALUE[2]'."\n";
+      $output .= '  </div>'."\n";
+    }
     
     $output .= '  ';
     if("REX_LINK[1]" != '' || "REX_VALUE[3]" != '' || "REX_LINK[2]" != '' || "REX_VALUE[6]" != '')
     {
-      $output .= '  <div class="linkblock">'."\n";
+      $output .= '  <div class="landing-links">'."\n";
       $output .= generateLink("REX_LINK_ID[1]","REX_VALUE[3]","REX_VALUE[4]","REX_VALUE[5]");
       $output .= generateLink("REX_LINK_ID[2]","REX_VALUE[6]","REX_VALUE[7]","REX_VALUE[8]");    
       $output .= '  </div>'."\n";
