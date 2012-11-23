@@ -85,7 +85,7 @@ Values:         REX_VALUE[1]  - Headline
   if("REX_VALUE[1]" != '')
   {
     $output  = '<div class="landingblock grid_6">'."\n";
-    $output .= '  <div class="landing-head">'."\n";
+    $output .= '  <div class="landing-head grid_6 first last">'."\n";
     $output .= '    <h2>REX_VALUE[1]</h2>'."\n";
     $output .= '  </div>'."\n";
     if("REX_MEDIA[1]" != '')
