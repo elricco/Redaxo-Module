@@ -8,7 +8,7 @@
   if("REX_VALUE[1]" != 0 || "REX_VALUE[2]" != 0)
   {
     //Build box
-    $output  = '<div class="sidebar">'."\n";
+    $output  = '<div class="sidebar grid_6">'."\n";
     //Show Search if selected
     if("REX_VALUE[1]" != 0)
     {
