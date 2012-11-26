@@ -59,6 +59,7 @@
   height: 25px;
   text-indent: -9999px;
   border: 0px none;
+  cursor: pointer;
 }
 
 .sidebar-head
