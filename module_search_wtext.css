@@ -1,0 +1,85 @@
+.sidebar
+{
+  background: #FFF;
+  -webkit-box-shadow:  0px 0px 5px 0px #999;
+  box-shadow:  0px 0px 5px 0px #999;
+  width: 100%;
+  border-top: 1px solid #E52F2A;
+  border-bottom: 1px solid #E52F2A;
+  margin: 0 30px 15px 0;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0 0 10px 0;
+}
+
+#searchfield
+{
+}
+
+#searchfield .sidebar-searchhead, .sidebar-head
+{
+  height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 7px 15px 0 15px;
+}
+
+#searchfield #rexsearch_form
+{
+  background-color: #cb1813;
+  min-height: 37px;
+}
+
+#searchfield #rsinput
+{
+  position: relative;
+  float: left;
+  padding: 0 0 0 15px;
+}
+
+#rsinput .rsinput
+{
+  border: 1px solid #FFF;
+  width: 218px;
+  height: 19px;
+}
+
+#searchfield #rsbutton
+{
+  position: relative;
+  float: left;
+  width: 24px;
+  margin: 5px 0 0 5px;
+}
+
+#rsbutton .rsbutton
+{
+  background: transparent url(search.png) no-repeat left top;
+  width: 24px;
+  height: 25px;
+  text-indent: -9999px;
+  border: 0px none;
+}
+
+.sidebar-head
+{
+   border-bottom: 1px solid #E52F2A; 
+}
+
+.sidebar-text
+{
+  position: relative;
+  float: left;
+  width: 250px;
+  padding: 10px 15px;
+}
+
+.sidebar-text p
+{
+  padding: 1px 0;
+}
+
+.sidebar .small-button
+{
+  width: 150px;
+}
