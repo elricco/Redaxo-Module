@@ -37,7 +37,7 @@
         $output .= '  </div>'."\n";
       }
       $output .= '  <div class="sidebar-text">'."\n";
-      $output .= '    REX_HTML_VALUE[1]'."\n";
+      $output .= '    REX_HTML_VALUE[4]'."\n";
       $output .= '  </div>'."\n";
     }
     

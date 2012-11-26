@@ -1,5 +1,6 @@
 <strong>Suche anzeigen:</strong>
 <br />
+<select name="VALUE[1]">
 <?php
   foreach (array("0"=>"nein", "1"=>"ja") as $value => $key)
   {
@@ -12,9 +13,11 @@
 	echo '>'.$key.'</option>';
   }
 ?>
+</select>
 <br />
 <strong>Text anzeigen:</strong>
 <br />
+<select name="VALUE[2]">
 <?php
   foreach (array("0"=>"nein", "1"=>"ja") as $value => $key)
   {
@@ -27,6 +30,7 @@
 	echo '>'.$key.'</option>';
   }
 ?>
+</select>
 <br />
 <strong>&Uuml;berschrift:</strong>
 <br />
